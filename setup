@@ -1,0 +1,11 @@
+sudo apt-get -y install apache2
+sudo apt-get -y install mysql-server
+sudo apt-get -y install php5 libapache2-mod-php5
+
+# restart server
+sudo /etc/init.d/apache2 restart
+
+# check php
+echo 'Checking PHP installation...';
+php -r 'echo "\n\nPHP installation is working fine. \n\n\n";'
+
